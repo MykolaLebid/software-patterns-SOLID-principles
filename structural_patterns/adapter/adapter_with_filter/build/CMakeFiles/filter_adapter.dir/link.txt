@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/filter_adapter.dir/main.cpp.o  -o filter_adapter 

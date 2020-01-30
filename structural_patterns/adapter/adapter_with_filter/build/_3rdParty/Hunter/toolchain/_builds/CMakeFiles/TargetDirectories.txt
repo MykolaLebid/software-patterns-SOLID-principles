@@ -1,0 +1,2 @@
+/home/mykola/Repos/design_patterns_in_modern_cpp/structural_patterns/adapter/adapter_with_filter/build/_3rdParty/Hunter/toolchain/_builds/CMakeFiles/rebuild_cache.dir
+/home/mykola/Repos/design_patterns_in_modern_cpp/structural_patterns/adapter/adapter_with_filter/build/_3rdParty/Hunter/toolchain/_builds/CMakeFiles/edit_cache.dir
