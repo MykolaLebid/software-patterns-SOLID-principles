@@ -78,10 +78,12 @@ struct TransparentShape : T
 };
 int main()
 {
-	Circle circle{0.5f};
-
+	// easy to init 
 	ColoredShape<TransparentShape<Square>> sq = {"red", 52, 5};
+	
 	std::cout << sq.str() << std::endl;
+	
+	// easy to work with
 	sq.color = "green";
 	sq.transparency = 230;
 	sq.side_size = 17; 

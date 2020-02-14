@@ -77,13 +77,21 @@ struct TransparentShape : Shape
 };
 int main()
 {
+	// we can compose and play with aggregation
 	Circle circle{0.5f};
-	ColoredShape redCircle{circle,"red"};
+	ColoredShape coloredCircle{circle,"red"};
 	ColoredShape greenCircle(circle, "green");
-	TransparentShape halfTransparentGreenCircle(greenCircle, 23);
+	TransparentShape transparentedColoredCircle(coloredCircle, 23);
 
-	std::cout << redCircle.str() << std::endl;
-	std::cout << halfTransparentGreenCircle.str() << std::endl;
+	std::cout << transparentedColoredCircle.str() << std::endl;
+	
+	// mutate the circle in a reverse way. We need to work with previous chain of init objects	
+	transparentedColoredCircle.transparency = 12;
+       	coloredCircle.color = greenCircle.color;
+	circle.resize(12);
+
+	std::cout << transparentedColoredCircle.str() << std::endl;
+
 	return 0;
 
 }
