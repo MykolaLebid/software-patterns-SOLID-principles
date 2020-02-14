@@ -82,11 +82,11 @@ int main()
 
 	ColoredShape<TransparentShape<Square>> sq = {"red", 52, 5};
 	std::cout << sq.str() << std::endl;
-//	ColoredShape greenCircle(circle, "green");
-//	TransparentShape halfTransparentGreenCircle(greenCircle, 23);
+	sq.color = "green";
+	sq.transparency = 230;
+	sq.side_size = 17; 
 
-//	std::cout << redCircle.str() << std::endl;
-//	std::cout << halfTransparentGreenCircle.str() << std::endl;
+	std::cout << sq.str() << std::endl;
 	return 0;
 
 }
